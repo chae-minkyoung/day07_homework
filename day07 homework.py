@@ -1,13 +1,13 @@
-#10.5
-el_dict={'name':'Hydrogen','symbol':'H','number':'1'}
-el_di21ct={'symbol':'H','number':'1','name':'Hydrogen'}
-class Element():
-    def __init__(self,other):
-        self.name=other["name"]
-        self.symbol=other["symbol"]
-        self.number=other["number"]
-hydrogen=Element(el_dict)
-print(vars(hydrogen))
+#10.6
+class Element:
+    def __init__(self,name,symbol,number):
+        self.name = name
+        self.symbol = symbol
+        self.number = number
+    def dump(self):
+        print('self.name, self.symbol, self.number')
+hydrogen=Element('Hydrogen','H','1')
 
+hydrogen.dump()
 
 
