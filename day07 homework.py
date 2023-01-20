@@ -1,13 +1,20 @@
-#10.7
+#10.8
 class Element:
     def __init__(self,name,symbol,number):
-        self.name = name
-        self.symbol = symbol
-        self.number = number
-    def __str__(self):
-        return ('self.name, self.symbol, self.number')
+        self.__name = name
+        self.__symbol = symbol
+        self.__number = number
+    def setter(self,input_name):
+        self.__name=input_name
+    def getter(self):
+        print(self.__name)
 hydrogen=Element('Hydrogen','H','1')
 
-print(hydrogen.__str__())
+hydrogen.getter()
+hydrogen.setter('Argon')
+hydrogen.getter()
+
+
+
 
 
