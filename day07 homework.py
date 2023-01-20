@@ -1,5 +1,11 @@
-class Thing3():
-    def __init__(self):
-        self.letter='xyz'
-print(Thing3().letter)  #아니요.
+#10.4
+import pprint
+class Element():
+    def __init__(self,name,symbol,number):
+        self.name=name
+        self.symbol=symbol
+        self.number=number
+
+A=Element('Hydrogen','H','1')
+pprint.pprint(vars(A))
 
