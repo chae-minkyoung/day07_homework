@@ -1,4 +1,4 @@
-#10.9
+#10.10
 class Laser():
     def does(self):
         return('disintergrate')
